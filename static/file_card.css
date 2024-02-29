@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.file-view-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.file-path {
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+.file-content {
+    font-size: 21px;
+    white-space: pre-wrap; /* Для сохранения форматирования текста, как в файле */
+}
+
+.view-all {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px; /* Более крупный шрифт для ссылки */
+    text-align: left;
+    font-weight: 600;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}

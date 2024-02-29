@@ -1,45 +1,84 @@
 body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px; /* Увеличено для более закругленных углов */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); /* Более выраженная тень */
+    width: 500px; /* Фиксированная ширина контейнера */
 }
 
-.App {
+h1 {
+    color: #333;
     text-align: center;
+    margin-bottom: 40px; /* Увеличено расстояние от заголовка до формы */
 }
 
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
+.form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px; /* Увеличено расстояние между лейблом и инпутом */
+    font-size: 16px; /* Более крупный шрифт для лейбла */
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px; /* Увеличенный паддинг для большего пространства */
+    border: 1px solid #ccc; /* Более светлая граница */
+    border-radius: 5px; /* Менее закругленные углы */
+    box-sizing: border-box; /* Добавлено, чтобы паддинги не увеличивали размеры элементов */
+    font-size: 16px; /* Более крупный шрифт для ввода */
+}
+
+.input-group textarea {
+    resize: vertical; /* Отключаем возможность изменения размера */
+    height: 100px; /* Фиксированная высота */
+}
+
+button {
+    background-color: #007bff;
     color: white;
+    padding: 15px 20px; /* Увеличенный паддинг для большей кнопки */
+    border: none;
+    border-radius: 5px; /* Менее закругленные углы */
+    cursor: pointer;
+    font-size: 18px; /* Более крупный шрифт для кнопки */
+    margin-top: 20px; /* Добавлено пространство сверху */
 }
 
-.App-link {
-    color: #61dafb;
+button:hover {
+    background-color: #0056b3;
 }
 
-.heart {
-    color: #ff0000;
+.view-all {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px; /* Более крупный шрифт для ссылки */
+    text-align: left;
+    font-weight: 600;
 }
 
-.small {
-    font-size: 0.75rem;
+.view-all:hover {
+    text-decoration: underline;
 }

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр файла</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='file_card.css') }}">
+</head>
+<body>
+    <div class="file-view-container">
+        <div class="file-path">./files/{{ file_name }}</div>
+        <div class="file-content">{{ content }}</div>
+        <a href="/all" class="view-all">View all files</a>
+    </div>
+</body>
+</html>
+

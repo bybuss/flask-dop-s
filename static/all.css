@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif; /* Используемый шрифт */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Цвет фона */
+    color: #333; /* Цвет текста */
+}
+
+.container {
+    width: 95%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень вокруг контейнера */
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.files {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Расстояние между карточками */
+    margin-top: 20px;
+}
+
+.file-card {
+    flex: 1;
+    width: auto; 
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Тень вокруг карточек */
+    border-radius: 10px; /* Скругление углов карточек */
+    text-align: center; /* Выравнивание текста по центру */
+    font-size: 16px;
+    color: #0b7aee;
+}
+
+/* a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+} */
+
+.view-all {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 18px; /* Более крупный шрифт для ссылки */
+    text-align: left;
+    font-weight: 600;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+.file-card:hover {
+    color: #0653ad; 
+    transform: scale(1.05);
+    background-color: #f5f5f5;
+}

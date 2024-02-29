@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список файлов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='all.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>List of Files</h1>
+        <div class="files">
+            {% for file in files %}
+                <div class="file-card">
+                    <a href="{{ url_for('file_card', file_name=file) }}" class="file-card">{{ file }}</a>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="https://reimagined-acorn-wr7qq59rvpjx2xrj-5000.app.github.dev/" class="view-all">Add New File</a>
+    </div>
+</body>
+</html>
+

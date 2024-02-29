@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Create file</h1>
+
+        <form class="form" method="post">
+            <div class="input-group">
+                <input id="file_name" type="text" placeholder="File name" name="file_name">
+            </div>
+            <div class="input-group">
+                <textarea id="context"type="text" placeholder="Context" name="context"></textarea>
+            </div>
+            <button type="submit">Create</button>
+            <a href="/all" class="view-all">View all files</a>
+        </form>
+    </div>
+</body>
+</html>
